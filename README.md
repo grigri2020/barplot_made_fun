@@ -6,4 +6,4 @@ What the script does:
 ====================
 It takes a regular bar plot and inserts a white block between the bars. Its for aesthetic purpose  only. It can iterate through the dataframe for this. 
 Final result looks closer to this:
-<img source = example/Example_barplot.png>
+<img src = example/Example_barplot.png>
