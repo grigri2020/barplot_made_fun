@@ -132,7 +132,7 @@ for ( i in unique(new_df$Level))
 
 sloppy = as.character(unlist(final_all_ggplot_colors))
 ggplot(new_df, aes(x=Level,y=Mutations)) + geom_bar(stat="identity", aes(fill=Gene))+
-  scale_fill_manual(values = c))  +
+  scale_fill_manual(values = final_all_ggplot_colors))  +
     theme(panel.background = element_blank(), axis.line.x = element_line(), axis.text.y = element_blank(), axis.ticks.y=element_blank())
 
 
