@@ -6,7 +6,7 @@ library(RColorBrewer)
 library(wrapr)
 library(glue)
 
-display.brewer.all()
+#display.brewer.all()
 #Arrange the dataframe first by Levels and then their descending mutations
 arrange_rows<-function(df, col1, col2)
 {
