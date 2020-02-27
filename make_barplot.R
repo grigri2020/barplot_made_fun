@@ -92,9 +92,10 @@ new_empty<-lapply(all_empty, function(x){
 }
 )
 
-
+#Initialize! 
 new_colors_assigned<-c()
 final_all_ggplot_colors <-c()
+
 for ( i in unique(new_df$Level))
 {
   newdf<-NULL
@@ -102,6 +103,10 @@ for ( i in unique(new_df$Level))
   newdf <- subset(new_df, Level == i)
   gene_list <-c()
   
+  "Remove each and every level from the dataframe and then
+   assign different variations of the color from RColorBrewer depending
+   on the number of observation for the x axis label.
+  "
   for (j in 1:nrow(newdf)){
     
     if (grepl("Empty", as.character(newdf[j,"Gene"]), perl=TRUE)){}
